@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Ticketing Calculation  </title>
-    <link rel="stylesheet" href="styles/style.css">
-    <!-- Tailwind & daisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Ticketing Calculation </title>
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- Tailwind & daisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-        <!-- Custom Color -->
-    <script>
+  <!-- Custom Color -->
+  <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -29,49 +30,152 @@
     };
   </script>
 </head>
+
 <body class="font-raleway">
-    <header class="container mx-auto mt-14  ">
-        <!-- Navbar start -->
-        <nav class="flex justify-between items-center">
-            <div class="flex ">
-                <h1 class=" text-4xl font-extrabold text-center text-[#030712]">P-Ticket</h1>
-            </div>
-            <div class="flex flex-row list-none justify-between text-lg font-semibold gap-14">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Destination</a></li>
-                <li><a href="">Search</a></li>
-            </div>
-            <button class="text-themecolor flex justify-center items-center px-4 py-7 gap-x-3 border-[1px] rounded-xl border-[#1dd10066] bg-[#1dd1001a] ">Bus <img class=" " src="./icon/small-bus.svg" alt=""></button>
-            <!-- Navbar end -->
-        </nav>
-      
-        <!-- Banner Section start -->
-        <section class="bg-banner-img bg-cover bg-center h-[536px] mt-12 rounded-3xl flex flex-col ">
-            <!-- Banner section Text and Button  -->
-            <div class=" flex flex-col items-center mx-auto justify-center text-center w-3/5 text-white mt-14 ">
-                <h1 class="text-[64px] font-extrabold  ">End-to-End Travel with</h1>
-                <p class="text-[64px] font-extrabold text-themecolor">P
-                Paribahan</p>
-                <p class="font-inter text-sm">Yes, you can run unit tests and view the results directly within the
-                app. The integrated testing features allow for a streamlined .</p>
-                <button class="px-8 py-5 bg-themecolor rounded-xl text-lg font-bold tex-[#030712] mt-8">Buy Tickets</button>
-            </div>
-            <!-- Banner section view part -->
+  <header class="container mx-auto mt-14  ">
+    <!-- Navbar start -->
+    <nav class="flex justify-between items-center">
+      <div class="flex ">
+        <h1 class=" text-4xl font-extrabold text-center text-[#030712]">P-Ticket</h1>
+      </div>
+      <div class="flex flex-row list-none justify-between text-lg font-semibold gap-14">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Destination</a></li>
+        <li><a href="">Search</a></li>
+      </div>
+      <button
+        class="text-themecolor flex justify-center items-center px-4 py-7 gap-x-3 border-[1px] rounded-xl border-[#1dd10066] bg-[#1dd1001a] ">Bus
+        <img class=" " src="./icon/small-bus.svg" alt=""></button>
+      <!-- Navbar end -->
+    </nav>
+
+    <!-- Banner Section start -->
+    <section class="bg-banner-img bg-cover bg-center h-[536px] mt-12 rounded-3xl flex flex-col ">
+      <!-- Banner section Text and Button  -->
+      <div class=" flex flex-col items-center mx-auto justify-center text-center w-3/5 text-white mt-14 ">
+        <h1 class="text-[64px] font-extrabold  ">End-to-End Travel with</h1>
+        <p class="text-[64px] font-extrabold text-themecolor">P
+          Paribahan</p>
+        <p class="font-inter text-sm w-4/5 pt-5 lg:pt-0 lg:w-full lg:text-lg">Yes, you can run unit tests and view the
+          results directly within the
+          app. The integrated testing features allow for a streamlined .</p>
+        <button class="px-8 py-5 bg-themecolor rounded-xl text-lg font-bold tex-[#030712] mt-8">Buy Tickets</button>
+      </div>
+      <!-- Banner section view part -->
+      <div class=" flex mx-auto translate-y-[70%] gap-6">
+        <!-- view part start -->
+        <!-- view part 01 -->
+        <div class="flex justify-center items-center">
+          <div
+            class=" w-72 bg-white border-themecolor rounded-3xl border-b-4 flex justify-center items-center gap-6 py-8 px-2 ">
+            <div><img src="icon/users-group.svg" alt=""></div>
             <div>
-                <!-- viw part start -->
-                <!-- viw part 01 -->
-                <div>
-                    <div>
-                        
-                    </div>
-                </div>
+              <h3 class="font-inter text-[#030712] text-3xl lg:text-4xl font-bold ">500K+</h3>
+              <p>Registered Users</p>
             </div>
-        </section>
-    </header>
+          </div>
+        </div>
+        <!-- view part 02 -->
+        <div class="flex justify-center items-center">
+          <div
+            class=" w-72 bg-white border-themecolor rounded-3xl border-b-4 flex justify-center items-center gap-6 py-8 px-2 ">
+            <div><img src="icon/ticket.svg" alt=""></div>
+            <div>
+              <h3 class="font-inter text-[#030712] text-3xl lg:text-4xl font-bold "> 1.7 lacks</h3>
+              <p>Tickets sold</p>
+            </div>
+          </div>
+        </div>
+        <!-- view part 03 -->
+        <div class="flex justify-center items-center">
+          <div
+            class=" w-72 bg-white border-themecolor rounded-3xl border-b-4 flex justify-center items-center gap-6 py-8 px-2 ">
+            <div><img src="icon/bus-stop.svg" alt=""></div>
+            <div>
+              <h3 class="font-inter text-[#030712] text-3xl lg:text-4xl font-bold ">80K+</h3>
+              <p>Rental partners</p>
+            </div>
+          </div>
+        </div>
+        <!-- Banner section view part end -->
+      </div>
+    </section>
+  </header>
+  <main>
+    <!-- Best offers section start -->
+    <section class=" container mx-auto flex flex-col lg:gap-16 mt-28 lg:mt-48">
+      <h3 class=" font-raleway text-black text-[40px] font-black text-center">Best offers for you</h3>
+      <div class="flex flex-col lg:flex-row gap-x-6" >
+        <!-- Coupon NEW15 -->
+        <div class="flex justify-between rounded-3xl lg:w-1/2  bg-[#FFBF0F] ">
+          <div class="p-12">
+            <h3 class=" text-black font-inter text-[36px] font-semibold">15% OFF</h3>
+            <p class="font-inter text-sm text-[#030712cc] font-semibold">on your next purchase</p>
+            <p class="font-inter text-sm font-medium text-[#03071280]">use by January 2024</p>
+          </div>
+          <div> <img src="icon/cupon-devider.svg" alt=""></div>
+          <div
+              class="flex flex-col justify-center items-center py-16 pl-2 pr-14">
+              <h3 class="font-bold text-[32px]" id>NEW15</h3>
+              <p>Coupon Code</p>
+            </div>
+        </div>
+        <!-- Coupon couple 20 -->
+        <div class="lg:w-1/2 bg-[#F78C9C] flex justify-between rounded-3xl">
+          <div class="p-12">
+            <h3 class="font-black font-inter text-[40px] text-[#030712cc]">
+              20% OFF
+            </h3>
+            <p class="font-inter text-xl text-[#030712cc] font-semibold">
+              on your next purchase
+            </p>
+            <p class="font-inter text-lg font-medium text-[#03071280]">
+              use by January 2024
+            </p>
+          </div>
+          <div>
+            <img src="icon/cupon-devider.svg" alt />
+          </div>
+          <div
+            class="flex flex-col justify-center items-center py-16 pl-2 pr-14">
+            <h3 class="font-bold text-2xl lg:text-[32px]" id="">Couple 20</h3>
+            <p>Coupon Code</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+  </main>
+  <footer class="bg-black text-white mx-auto mt-32">
+    <div class="w-11/12 mx-auto container">
+      <div class="flex justify-between items-center pt-32 pb-12 border-b-[1px] border-dashed">
+        <div>
+          <h3 class="font-extrabold text-4xl pb-6">P-Ticket</h3>
+          <p class="font-inter text-lg w-3/5 opacity-80">P-Ticket is a digital
+            platform to make your daily commuting better.</p>
+        </div>
+        <div>
+          <p class="text-xl font-semibold pb-5">Download Our App</p>
+          <img src="./assets/icon/google-play.svg" class="hover:cursor-pointer" alt>
+        </div>
+      </div>
+      <div class="flex justify-between items-center pb-32 pt-8">
+        <div>
+          <p class="opacity-70">@all rights reserved, P-Ticket services
+            limited.2024</p>
+        </div>
+        <div class="flex justify-between list-none gap-8 text-inter font-medium">
+          <li><a href="#">Terms & condition</a></li>
+          <li><a href="#">Return & refund policy</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
 
-
-   <script src="cal.js"></script> 
+  <script src="cal.js"></script>
 </body>
+
 </html>
