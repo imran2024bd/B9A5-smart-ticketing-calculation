@@ -106,7 +106,7 @@
     <!-- Best offers section start -->
     <section class=" container mx-auto flex flex-col lg:gap-16 mt-28 lg:mt-48">
       <h3 class=" font-raleway text-black text-[40px] font-black text-center">Best offers for you</h3>
-      <div class="flex flex-col lg:flex-row gap-x-6" >
+      <div class="flex flex-col lg:flex-row gap-x-6">
         <!-- Coupon NEW15 -->
         <div class="flex justify-between rounded-3xl lg:w-1/2  bg-[#FFBF0F] ">
           <div class="p-12">
@@ -115,11 +115,10 @@
             <p class="font-inter text-sm font-medium text-[#03071280]">use by January 2024</p>
           </div>
           <div> <img src="icon/cupon-devider.svg" alt=""></div>
-          <div
-              class="flex flex-col justify-center items-center py-16 pl-2 pr-14">
-              <h3 class="font-bold text-[32px]" id>NEW15</h3>
-              <p>Coupon Code</p>
-            </div>
+          <div class="flex flex-col justify-center items-center py-16 pl-2 pr-14">
+            <h3 class="font-bold text-[32px]" id>NEW15</h3>
+            <p>Coupon Code</p>
+          </div>
         </div>
         <!-- Coupon couple 20 -->
         <div class="lg:w-1/2 bg-[#F78C9C] flex justify-between rounded-3xl">
@@ -137,14 +136,83 @@
           <div>
             <img src="icon/cupon-devider.svg" alt />
           </div>
-          <div
-            class="flex flex-col justify-center items-center py-16 pl-2 pr-14">
+          <div class="flex flex-col justify-center items-center py-16 pl-2 pr-14">
             <h3 class="font-bold text-2xl lg:text-[32px]" id="">Couple 20</h3>
             <p>Coupon Code</p>
           </div>
         </div>
       </div>
+      <button
+        class="rounded-2xl border-[1px] border-themecolor px-8 py-5 text-themecolor font-bold text-xl mt-8 lg:mt-0 lg:w-[20%] mx-auto">
+        See All Offers
+      </button>
     </section>
+    <!-- Ticket details and price section -->
+    <section class="border-themecolor bg-[#F7F8F8] rounded-t-[88px]  border-t-2 translate-y-[2px] mt-20">
+      <div>
+        <h3 class=" text-4xl font-bold text-center rounded pt-28"> P.H Paribahan</h3>
+        <p class="text-center px-6 lg:px-80 pt-6 pb-10 text-lg text-[#03071299]">Yes, you can run unit tests and view
+          the results directly within
+          the app. The integrated <br> testing features allow for a streamlined .</p>
+      </div>
+      <!-- Ticket Seat Aloowcation and  display of price -->
+      <div class="container flex flex-col lg:flex-row justify-between bg-white lg:w-11/12 mx-auto  rounded-3xl">
+        <div class="flex flex-col justify-between lg:w-[70%] pt-10 px-8 ">
+          <div class="flex justify-between">
+            <!-- paribahan -->
+            <div class=" flex gap-3">
+              <div>
+              <img src="icon/bus-logo.svg" alt="">
+            </div>
+            <div>
+              <h3 class="font-raleway text-3xl font-bold text-center">Greenline Paribahan</h3>
+              <p >Coach-009-WEB ! AC_Business</p>
+            </div>
+            </div>
+            <div>
+              <button class=" flex rounded-xl p-4 bg-[#1dd10026]  gap-3">
+                <img src="icon/tabler-icon-armchair.svg" alt />
+                <p class="font-inter text-lg font-medium  text-themecolor ">
+                  <span id="count-seat">40</span> Seats left
+                </p>
+              </button>
+            </div>
+          </div>
+          <div>
+            <div class=" flex justify-between mx-auto border-b-2 border-dashed w-[90%] py-8 ">
+              <p>Route</p>
+              <p>Dhaka-Sylhet</p>
+            </div>
+            <div class=" flex justify-between mx-auto border-b-2 border-dashed w-[90%] py-8 ">
+              <p>Departure Time</p>
+              <p>9:00 PM</p>
+            </div>
+            <div class="pt-6 pb-8 flex flex-col gap-2 lg:flex-row justify-between w-[90%] mx-auto">
+              <button
+                class="px-4 bg-[#0307120d] rounded-xl py-5 font-inter font-medium text-base">Boarding
+                Point - Laxmipur</button>
+              <button
+                class="px-4 bg-[#0307120d] rounded-xl py-5 font-inter font-medium text-base">Dropping Point - Bogura</button>
+              <button
+                class="px-4 bg-[#0307120d] rounded-xl py-5 font-inter font-medium text-base">Est. Time - 11 Hour</button>
+            </div>
+          </div>
+        </div>
+        <!-- Div Divider -->
+        <div><img class=" hidden h-full lg:flex" src="icon/ticket-divider.svg" alt=""></div>
+        <!-- Ticket Price section -->
+        <div class="flex flex-col justify-center items-center lg:pr-20 pb-10 lg:pb-0">
+          <img src="icon/tabler-icon-coin-taka-filled.svg" alt="">
+          <p class=" text-3xl text-[#030712] text-center font-bold  ">
+            <span id="per-ticket-price">550</span> Taka
+          </p>
+          <p class="text-2xl text-center text-[#03071299] font-semibold ">
+            Per seat
+          </p>
+        </div>
+      </div>
+    </section>
+
 
   </main>
   <footer class="bg-black text-white mx-auto mt-32">
