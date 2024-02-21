@@ -16,7 +16,7 @@ if (!selectionsSeatNumber.includes(SelectedSeatNumber)) {
         return;
     }
     selectionsSeatNumber.push(SelectedSeatNumber);
-    e.target.classList.toggle('bg-themecolor');
+    e.target.classList.add('bg-themecolor');
     countingSeat = selectionsSeatNumber.length;
     setInnerText('counting-seatNumber' , countingSeat );
     remainingSeat = 40 - selectionsSeatNumber.length ;
@@ -41,9 +41,9 @@ else if (selectionsSeatNumber.includes(SelectedSeatNumber)) {
     selectionsSeatNumber.pop(SelectedSeatNumber);
     e.target.classList.remove('bg-themecolor');
     countingSeat = selectionsSeatNumber.length;
-    setInnerText('counting-seatNumber' , countingSeat );
+    setInnerText('counting-seatNumber' , countingSeat);
     remainingSeat = 40 - selectionsSeatNumber.length ;
-    setInnerText('remaining-seatNumber' , remainingSeat );
+    setInnerText('remaining-seatNumber' , remainingSeat);
     const ticketRowCreate = document.createElement('tr');
     const ticketRow = document.getElementById('ticketPrice-display');
     ticketRow.removeChild(ticketRowCreate);
@@ -59,9 +59,9 @@ else {
         const newCoupon = document.getElementById('new-coupon').innerText;
         const coupleCoupon = document.getElementById('couple-coupon').innerText;
         const couponInput = document.getElementById('coupon-input');
-        couponInput.addEventListener('input', function () {
+        couponInput.addEventListener('input', function (e) {
             const inputText = couponInput.value;
-            if (inputText == coupleCoupon && parseInt(seatCount) >= 4) {
+            if (inputText == coupleCoupon && parseInt(countingSeat) >= 4) {
                 const applyButton = document.getElementById('apply-button');
                 applyButton.attributes.removeNamedItem('disabled');
                 applyButton.addEventListener('click', function () {
@@ -71,7 +71,7 @@ else {
                     document.getElementById('coupon-apply-section').classList.add('hidden');
                 })
             }
-            else if (inputText == newCoupon && parseInt(seatCount) >= 4) {
+            else if (inputText == newCoupon && parseInt(countingSeat) >= 4) {
                 const applyButton = document.getElementById('apply-button');
                 applyButton.removeAttribute('disabled');
                 applyButton.addEventListener('click', function () {
@@ -81,10 +81,12 @@ else {
                     document.getElementById('coupon-apply-section').classList.add('hidden');
                 })
             }
-            else {
+            else if(inputText.length>9){
+                alert('Your Coupon is Not Valid');
                 document.getElementById('apply-button').disabled = true;
-            }
+              }
         })
+
         if (selectionsSeatNumber.length > 0) {
             const phoneNumberInputField = document.getElementById('phone-number');
             phoneNumberInputField.addEventListener('input', function () {
@@ -104,7 +106,7 @@ else {
 
 // set inner Text Utility Function
 
-function setInnerText(id , value) {
+function setInnerText(id, value) {
     const newValue = document.getElementById(id);
     newValue.innerText = value;
 }
