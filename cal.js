@@ -3,22 +3,17 @@ let countingSeat = parseInt(document.getElementById('counting-seatNumber').inner
 let remainingSeat = parseInt(document.getElementById('remaining-seatNumber').innerText);
 const perTicketPrice = parseInt(document.getElementById('per-ticket-price').innerText);
 
-// console.log('selected-seat' , selected-seat);
-// console.log('perTicketPrice' , perTicketPrice);
-// console.log('countingSeat' , countingSeat);
-// console.log('remaining-seatNumber' , remaining-seatNumber);
-
 let initialTicketPrice = 0;
 
 const selectionsSeatNumber = [];
 
 for (const selection of selections){
-// console.log(selections.target);
 selection.addEventListener('click', function (e) {
 const SelectedSeatNumber = e.target.innerText;
 if (!selectionsSeatNumber.includes(SelectedSeatNumber)) {
     if (selectionsSeatNumber.length >= 4) {
-        alert(' Already Exceeds your Limit 4 Seats')
+        alert(' Already Exceeds your Limit 4 Seats');
+        return;
     }
     selectionsSeatNumber.push(SelectedSeatNumber);
     e.target.classList.toggle('bg-themecolor');
@@ -33,15 +28,15 @@ if (!selectionsSeatNumber.includes(SelectedSeatNumber)) {
     <td class="px-0">${SelectedSeatNumber}</td>
     <td>Economy</td>
     <td class="text-right px-0" id="selected-price">${perTicketPrice}</td>
-  </tr>
-    `
+  </tr>`
     ticketRow.appendChild(ticketRowCreate);
     const selectedPrice = parseInt(document.getElementById('selected-price').innerText);
     initialTicketPrice = initialTicketPrice + selectedPrice ;
 }   
 else if (selectionsSeatNumber.includes(SelectedSeatNumber)) {
     if (selectionsSeatNumber.length >= 4) {
-        alert(' Already Exceeds your Limit 4 Seats')
+        alert(' Already Exceeds your Limit 4 Seats');
+        return;
     }
     selectionsSeatNumber.pop(SelectedSeatNumber);
     e.target.classList.remove('bg-themecolor');
