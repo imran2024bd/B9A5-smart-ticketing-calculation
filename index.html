@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smart Ticketing Calculation </title>
   <link rel="stylesheet" href="styles/style.css">
+  <!-- confirmation messeage icon -->
+  <link rel="stylesheet" href="icon/favicon.png" type="">
   <!-- Tailwind & daisyUI CDN -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -116,7 +118,7 @@
           </div>
           <div> <img src="icon/cupon-devider.svg" alt=""></div>
           <div class="flex flex-col justify-center items-center py-16 pl-2 pr-14">
-            <h3 class="font-bold text-[32px]" id="new-coupon" >NEW15</h3>
+            <h3 class="font-bold text-[32px]" id="new-coupon">NEW15</h3>
             <p>Coupon Code</p>
           </div>
         </div>
@@ -228,14 +230,11 @@
           <div class="flex flex-col justify-center pt-8 pb-10 lg:pb-20 mx-8 font-inter ">
             <div>
               <div class="flex justify-end pb-3">
-                <div
-                  class=" flex justify-center rounded-xl bg-[#F7F8F8] w-[20%] py-4 "><img
-                    src="icon/tabler-icon-steering-wheel.svg"
-                    alt></div>
+                <div class=" flex justify-center rounded-xl bg-[#F7F8F8] w-[20%] py-4 "><img
+                    src="icon/tabler-icon-steering-wheel.svg" alt></div>
               </div>
               <div class="grid grid-cols-11 gap-8">
-                <div
-                  class=" h-full flex flex-col gap-4 col-span-1 items-center">
+                <div class=" h-full flex flex-col gap-4 col-span-1 items-center">
                   <p class="py-4">A</p>
                   <p class="py-4">B</p>
                   <p class="py-4">C</p>
@@ -295,7 +294,7 @@
             </div>
           </div>
         </div>
-        
+
 
         <!-- divider -->
         <div class="bg-[#F7F8F8] w-[20%] py-4 flex justify-center rounded-xl">
@@ -313,7 +312,8 @@
                 <!-- head -->
                 <thead>
                   <tr class="text-base border-b-2 border-gray-300 border-dotted ">
-                    <th class="px-0">Seat <span id="counting-seatNumber" class="text-sm bg-themecolor px-2 rounded-sm text-white">0</span></th>
+                    <th class="px-0">Seat <span id="counting-seatNumber"
+                        class="text-sm bg-themecolor px-2 rounded-sm text-white">0</span></th>
                     <th>Class</th>
                     <th class="text-right px-0">Price</th>
                   </tr>
@@ -345,7 +345,8 @@
             <div id="coupon-apply-section" class="flex justify-between mt-5 bg-white py-4 px-3 rounded-xl">
               <input id="coupon-input" type="text" placeholder="Have any copupon?"
                 class="focus:border-none focus:outline-none ml-4 bg-transparent" />
-              <button id="apply-button" class="px-8 py-3 rounded-xl text-white bg-themecolor font-semibold disabled:bg-slate-800"
+              <button id="apply-button"
+                class="px-8 py-3 rounded-xl text-white bg-themecolor font-semibold disabled:bg-slate-800"
                 disabled>Apply</button>
             </div>
 
@@ -367,7 +368,8 @@
             <p class="font-bold">Email ID</p>
             <input class="px-6 py-5 border-[1px] w-full rounded-xl my-3 bg-transparent" type="text"
               placeholder="Enter your email id">
-            <button id="next-button" class="py-4 w-full bg-themecolor text-white font-bold rounded-md disabled:bg-slate-800"
+            <button id="next-button" onclick="my_modal_1.showModal()"
+              class="py-4 w-full bg-themecolor text-white font-bold rounded-md disabled:bg-slate-800"
               disabled>Next</button>
           </div>
           <div class="flex justify-evenly underline py-4 pb-8">
@@ -408,4 +410,5 @@
 
   <script src="cal.js"></script>
 </body>
+
 </html>

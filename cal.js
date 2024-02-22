@@ -82,7 +82,7 @@ else {
                 })
             }
             else if(inputText.length>9){
-                alert('Your Coupon is Not Valid');
+                alert(' Input Your Coupon that  is Not Valid');
                 document.getElementById('apply-button').disabled = true;
               }
         })
